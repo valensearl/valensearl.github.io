@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perpusda</title>
+    <link rel="stylesheet" href="css/style-kontak.css">
+
+    <!-- Icon -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-book-open"></i>
+                Perpusda
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="tentang.html">Tentang Kami</a></li>
+                <li><a href="katalog.html">Katalog Buku</a></li>
+                <li><a href="layanan.html">Layanan</a></li>
+                <li><a href="kontak.html" class="active">Kontak</a></li>
+                <li><a href="login.html" class="login-btn">Login</a></li>
+            </ul>
+
+            <button class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Konten -->
+    <section class="kontak">
+        <div class="container">
+            <h1>Hubungi Kami</h1>
+            <div class="kontak-content">
+                <p>Jika Anda memiliki pertanyaan, kritik, saran, maupun ingin memperoleh
+            informasi mengenai layanan Perpustakaan Daerah Salatiga,
+            silakan menghubungi kami melalui kontak di bawah ini:</p>
+            <div class="kontak-wrapper">
+                <!-- Informasi Kontak -->
+                 <div class="kontak-info">
+                    <h2>Informasi Kontak</h2>   
+                <div class="kontak-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Jl. Adi Sucipto No.7, Kalicacing,
+                        Kecamatan Sidomukti, Kota Salatiga,
+                        Jawa Tengah 50724</p>
+                </div>
+                <div class="kontak-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>(0298) 326951</p>
+                </div>
+                <div class="kontak-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>dinpersip@salatiga.go.id</p>
+                </div>
+                <div class="kontak-item">
+                    <i class="fa-solid fa-clock"></i>
+                    <ul>
+                        <li>Senin - Kamis: 08.00 - 17.00 WIB</li>
+                        <li>Jumat: 07.30 - 15.00 WIB</li>
+                        <li>Sabtu: 08.00 - 11.00 WIB</li>
+                        <li>Minggu: Libur</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Form Kontak -->
+            <div class="kontak-form">
+                <h2>Kirim Pesan</h2>
+                <form action="proses_kontak.php" method="POST">
+                    <input type="text" name="nama" placeholder="Nama" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="pesan" placeholder="Pesan" required></textarea>
+                    <button type="submit">Kirim</button>
+                </form>
+            </div>
+            <div class="kontak-map">
+                <h2>Lokasi Perpustakaan</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.438165253877!2d110.49770907476112!3d-7.327024992681284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a783f2286fa9f%3A0xc7513512a42c0dcc!2sPerpustakaan%20dan%20Arsip%20Daerah%20Kota%20Salatiga!5e1!3m2!1sid!2sid!4v1782916595165!5m2!1sid!2sid"
+                    width="100%"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"></iframe>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+
+            <div class="footer-brand">
+                <h3>Perpusda</h3>
+                <p>
+                    Perpustakaan Daerah yang menyediakan akses
+                    pengetahuan, literasi, dan sumber belajar
+                    untuk seluruh masyarakat.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Menu</h4>
+                <a href="index.html">Beranda</a>
+                <a href="tentang.html">Tentang Kami</a>
+                <a href="katalog.html">Katalog Buku</a>
+                <a href="layanan.html">Layanan</a>
+                <a href="kontak.html">Kontak</a>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Kontak</h4>
+                <p><i class="fa-solid fa-location-dot"></i> Jl. Adi Sucipto No.7, Kalicacing, Kecamatan Sidomukti, Kota Salatiga, Jawa Tengah 50724</p>
+                <p><i class="fa-solid fa-phone"></i> (0298) 326951</p>
+                <p><i class="fa-solid fa-envelope"></i> dinpersip@salatiga.go.id</p>
+            </div>
+
+            <div class="footer-social">
+                <h4>Ikuti Kami</h4>
+
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 Perpusda. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

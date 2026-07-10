@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perpusda</title>
+    <link rel="stylesheet" href="css/style-katalog.css" />
+
+    <!-- Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar">
+        <a href="index.html" class="logo">
+          <i class="fa-solid fa-book-open"></i>
+          Perpusda
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="tentang.html">Tentang Kami</a></li>
+          <li><a href="katalog.html" class="active">Katalog Buku</a></li>
+          <li><a href="layanan.html">Layanan</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+          <li><a href="login.html" class="login-btn">Login</a></li>
+        </ul>
+
+        <button class="menu-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <!-- Konten -->
+    <section class="catalog-section" id="katalog">
+      <div class="catalog-container">
+        <div class="catalog-header">
+          <span class="catalog-subtitle">Koleksi Perpusda</span>
+          <h2 class="catalog-title">Katalog Buku</h2>
+          <p class="catalog-description">
+            Jelajahi berbagai koleksi buku yang tersedia di Perpustakaan Daerah.
+          </p>
+        </div>
+
+        <!-- Search & Filter -->
+        <div class="catalog-toolbar">
+          <div class="catalog-search-wrapper">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input
+              type="text"
+              id="catalogSearch"
+              placeholder="Cari judul atau penulis..."
+              class="catalog-search-input"
+            />
+          </div>
+          <div class="filter">
+            <select id="catalogCategoryFilter" class="catalog-filter">
+              <option value="">Semua Kategori</option>
+              <option value="Novel">Novel</option>
+              <option value="Sastra Indonesia">Sastra Indonesia</option>
+              <option value="Buku Anak">Buku Anak</option>
+              <option value="Matematika">Matematika</option>
+              <option value="Fisika">Fisika</option>
+              <option value="Kimia">Kimia</option>
+              <option value="Biologi">Biologi</option>
+              <option value="Teknologi">Teknologi</option>
+              <option value="Agama">Agama</option>
+              <option value="Sejarah Indonesia">Sejarah Indonesia</option>
+              <option value="Bahasa Indonesia">Bahasa Indonesia</option>
+              <option value="Bahasa Inggris">Bahasa Inggris</option>
+              <option value="Bahasa Arab">Bahasa Arab</option>
+              <option value="Bahasa Jepang">Bahasa Jepang</option>
+              <option value="Bahasa Korea">Bahasa Korea</option>
+              <option value="Public Speaking">Public Speaking</option>
+              <option value="Self Improvement">Self Improvement</option>
+            </select>
+
+            <select id="catalogStatusFilter" class="catalog-filter">
+              <option value="">Semua Status</option>
+              <option value="Tersedia">Tersedia</option>
+              <option value="Dipinjam">Dipinjam</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Rak Buku -->
+        <div class="catalog-bookshelf" id="catalogBookshelf"></div>
+
+        <!-- State Kosong -->
+        <div id="catalogEmptyState" class="catalog-empty-state">
+          <i class="fa-solid fa-book-open"></i>
+          <h3>Buku tidak ditemukan</h3>
+          <p>Coba gunakan kata kunci lain atau ubah filter pencarian.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-brand">
+          <h3>Perpusda</h3>
+          <p>
+            Perpustakaan Daerah yang menyediakan akses pengetahuan, literasi,
+            dan sumber belajar untuk seluruh masyarakat.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Menu</h4>
+          <a href="index.html">Beranda</a>
+          <a href="tentang.html">Tentang Kami</a>
+          <a href="katalog.html">Katalog Buku</a>
+          <a href="layanan.html">Layanan</a>
+          <a href="kontak.html">Kontak</a>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Kontak</h4>
+          <p>
+            <i class="fa-solid fa-location-dot"></i> Jl. Adi Sucipto No.7,
+            Kalicacing, Kecamatan Sidomukti, Kota Salatiga, Jawa Tengah 50724
+          </p>
+          <p><i class="fa-solid fa-phone"></i> (0298) 326951</p>
+          <p><i class="fa-solid fa-envelope"></i> dinpersip@salatiga.go.id</p>
+        </div>
+
+        <div class="footer-social">
+          <h4>Ikuti Kami</h4>
+
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">© 2026 Perpusda. All Rights Reserved.</div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/data-buku.js"></script>
+    <script src="js/script-katalog.js"></script>
+  </body>
+</html>
